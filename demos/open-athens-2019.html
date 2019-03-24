@@ -73,26 +73,40 @@
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50">
             <h1>Delivering AI Applications with Open Source Platforms at Scale</h1>
-            <h4>How upstarts can play in mission-critical industries</h4>
           &nbsp;  
           &nbsp;
           &nbsp;  
           &nbsp;
           &nbsp;  
           &nbsp;
-          <ul>Pantelis Monogioudis, Gurudutt Hosanghadi, Lorant Farkas</ul>
+          <ul>Pantelis Monogioudis, Gurudutt Hosanghadi, Lorant Farkas, Chris White</ul>
           &nbsp;  
           &nbsp;
           &nbsp;  
           &nbsp;
           &nbsp;  
           &nbsp;
-          <ul>Augmented Intelligence & Devices Research Lab, Bell-Labs</ul>
-          
+          <ul>Augmented Intelligence & Devices Research Lab</ul>
+          <ul>Bell-Labs, Murray Hill, NJ, USA</ul>
         </div>
         </section>
         
-        <section class="bg-apple aligncenter">
+          <section class="bg-apple alignleft">
+              <div class="wrap">
+                <img class="alignleft size-20" src="../static/images/me.jpg" alt="iPhone">
+                <h2>About me</h2>
+                
+                <p>20 years of experience in leading Research & Development projects. I started in wireless communications (PHY/MAC) in the 90s and in 2000’s started 
+                  diversifying into Machine Learning initially for wireless networks and later for all sorts of applications.  Currently leading ~15 researchers in 
+                  Murray Hill NJ and Budapest in Applied Machine Learning working on 
+                  real-time multisensory data fusion applications. 1 (failed) startup, 15 journal publications and 50 patents issued/pending. As of spring 2019 I am also with the 
+                  Computer Science department of NJIT. For the last 20 years I live in Randolph, NJ with my wife, my two boys Alex & Nicholas and my dog Bleu. 
+                </p>
+              </div>
+              <!-- .end .wrap -->
+            </section>
+
+        <section class="bg-apple alignleft">
           <!--.wrap = container (width: 90%) -->
           <div class="wrap">
             <h2>A nautical analogy on where we are today with AI</h2>
@@ -136,6 +150,14 @@
           </div>
         </section>
   
+        <section class="bg-apple aligncenter">
+            <div class="wrap zoomIn">
+              <h1>
+                AI in Health
+              </h1>
+            </div>
+        </section>
+
         <section class="bg-apple slide-bottom">
             <span class="background-center" style="background-image:url('../static/images/unreal-architecture.jpg')"></span>
             <div class="wrap">
@@ -151,13 +173,21 @@
         </section>
 
         <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/heart-disease.png')"></span>
+            <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+            <span class="background" style="background-image:url('https://source.unsplash.com/Y5Tjb62cxl8/')"></span>
             <div class="wrap">
               <div class="content-left">
-                <h2>#1 Cause of Death </h2>
+                <p>
+                  <svg class="large fa-tree">
+                    <use xlink:href="#fa-tree"></use>
+                  </svg>
+                </p>
+                <h1>640,000 people die every year</h1>
+                <h4>Yearly cost of heart disease treatment:  $300 Billion  </h4>
               </div>
             </div>
-        </section>
+            <!-- .end .wrap -->
+          </section>
 
         <section class="bg-apple slide-bottom">
             <span class="background-center" style="background-image:url('../static/images/heartflow.png')"></span>
@@ -242,8 +272,8 @@
             <span class="background-center" style="background-image:url('../static/images/ai-stack.svg')"></span>
             <div class="wrap">
               <div class="content-left">
-                <h2>Inverted C-plane</h2>
-                <h2>Architecture</h2>
+                <h2>AI Stack</h2>
+                <h4>The significance of the edge</h4>
               </div>
             </div>
         </section>
@@ -303,11 +333,15 @@
   <section class="bg-apple slide-bottom">
       <span class="background-center" style="background-image:url('../static/images/flats.jpeg')"></span>
       <div class="wrap">
-        <div class="content-left">
+        <div class="content-bottom">
           <h2>Market Reaction</h2>
-          <h4>The single most important factor of heartflow.com success was a unique product feature: the predictions were explainable.</h4>
-          <h4> 2019 market valuation - $1.5 billion 
-          <h4> NHS adopted the approach in all its hospitals</h4>
+          <h4>
+          <ul>
+            <li>The single most important success factor of heartflow.com: <strong>explainable predictions</strong></li>
+            <li>2019 market valuation - $1.5 billion </li>
+            <li>NHS adopted the approach in all its hospitals</li> 
+          </ul>
+        </h4>
         </div>
       </div>
   </section>
@@ -323,7 +357,7 @@
 
         <section class="bg-apple" >
             <div class="wrap">
-              <h2>Video Analytics & Security</h2>
+              <h2>Video AI opportunities in survailance</h2>
               <hr>
               <div class="grid">
                 <div class="column">
@@ -350,7 +384,7 @@
               <span class="background-center" style="background-image:url('../static/images/soccer.png')"></span>
               <div class="wrap">
                 <div class="content-top">
-                  <h2> Video Analytics & Sports </h2>
+                  <h2> Video AI opportunities in sports </h2>
                   <h4> Lots of opportunities on improving team performance or AI-based personal trainers.</h4>
                   <h4>$200 for 1 camera</h4>
                   <h4>$3,000 to store in AWS S3 its video feed for 1 year</h4>
@@ -359,53 +393,58 @@
           </section>
 
           <section class="bg-apple slide-bottom">
-              <span class="background-center" style="background-image:url('../static/images/jetsonfamily.png')"></span>
+              <span class="background-center" style="background-image:url('../static/images/Nvidia-Jetson-Xavier-Large.jpg')"></span>
               <div class="wrap">
                 <div class="content-top"> 
-                  <h2> Video Analytics & Far Edge Processing </h2>
-                  <h4>$99 Nano Jetson with 128 Tensorcores and 4xA57 by NVIDIA</h4>
-                  <h4>$150 EdgeTPU + and 4xA57 by Google</h4>
+                  <h2>Video AI opportunities at the edge</h2>
+                  <ul>
+                  <li> 
+                    <h4>All cloud providers are working on capturing hybrid cloud native applications hosted on Kubernetes </h4> </li>
+                  <li>
+                    <h4>Federation, tailored to the edge hardware, security & other optimizations in edge cloud for embedded systems </h4>
+                  </li>
+                </ul>
                 </div>
               </div>
           </section>
-
-          
 
           <section class="bg-apple slide-bottom">
               <span class="background-center" style="background-image:url('../static/images/congestion.jpg')"></span>
               <div class="wrap">
                 <div class="content-left">
                   <h2>Transportation</h2>
-                  <h4>Over the next 5 years vehicle electrification and auto-pilot developments will create a huge disruption
+                  <h4>Autonomous connected electric & shared (ACES) vehicles
                   <ul>
-                      <li>How will EVs recharged overnight in a city full of blocks of flats? </li>
+                      <li>How will EVs recharge overnight in a city full of blocks of flats? </li>
+                      <li>Simoudis' book covers the business models and technology drivers </li>
                   </ul>
                 </h4>
-                  <h4>Congestion pricing in city centers - create new revenue streams for public transport
+                  <h4>Congestion pricing in city centers
                       <ul>
                           <li>Yield Management Algorithms (Dynamic Pricing)</li>
                           <li> License plate recognition</li>
                           <li> Car type recognition</li>
                           <li> Traffic Congestion recognition</li>
                       </ul>
-                     
                     </h4>
                 </div>
               </div>
           </section>
 
-        <section class="bg-apple">
-                <div class="wrap longform">
+        <section class="bg-apple slide-bottom">
+            <span class="background-center" style="background-image:url('../static/images/miloi-chios.jpg')"></span>
+            <div class="wrap">
+                <div class="content-right">
+                    
                     <h1>
                     Closing ...
                     </h1>
                     <h4>
                     <ul>
-                      <li> Be here but think global. </li>
-                      <li> There is no such thing as "AI startup" - you need to have a solid business model that is by itself sustained without AI. </li>
-                      <li> Rethink mission critical industries - partner with local providers to make their business models work better.</li>
-                      <li> Health, Transportation, Energy, Security are being disrupted not so by AI but by the  drammatic cost reduction of the platforms 
-                          (cloud infrastructure, robotic manufacturing) that allow entries from many, unseen before, players.</li>
+                      <li> There is no such thing as "AI startup" - you need to have a solid business model that is by itself sustained without AI </li>
+                      <li> Rethink mission critical industries - partner with local providers to make their business models work better</li>
+                      <li> Health, Transportation, Energy, Security are being disrupted not so by AI but by the  drammatic cost reduction of the software & 
+                        hardware platforms that allow entries from many, unseen before, players</li>
                       </ul>
                     </h4>
                   </div>
