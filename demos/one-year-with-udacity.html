@@ -53,7 +53,7 @@
     <meta name="theme-color" content="#333333">
   </head>
   <body>
-    <header role="banner">
+    <!-- <header role="banner">
       <nav role="navigation">
           <a href="https://www.bell-labs.com"> <i class="fas fa-external-link-square-alt fa-2x"></i></a>
         <ul>
@@ -65,10 +65,11 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </header> -->
 
     <main role="main">
       <article id="webslides">
+
         <section class="bg-apple">
           <!--.wrap = container (width: 90%) -->
           <div class="wrap size-50">
@@ -97,7 +98,7 @@
                 <img class="alignleft size-20" src="../static/images/me.jpg" alt="iPhone">
                 <h2>About me</h2>
                 
-                <p>20 years of experience in leading Research & Development projects. I started in wireless communications (PHY/MAC) in the 90s and in 2000’s started 
+                <p>20 years of experience in leading Research & Development projects in multiple countries / cultures. I started in wireless communications (PHY/MAC) in the 90s and in 2000’s started 
                   diversifying into Machine Learning initially for wireless networks and later for all sorts of applications.  Currently leading ~15 researchers in 
                   Murray Hill NJ and Budapest in Applied Machine Learning working on 
                   real-time multisensory data fusion applications. 1 (failed) startup, 15 journal publications and 50 patents issued/pending. As of spring 2019 I am also with the 
@@ -109,16 +110,7 @@
               <!-- .end .wrap -->
             </section>
 
-        <section class="bg-apple alignleft">
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h2>A nautical analogy on where we are today with AI</h2>
-            <figure><img class="aligncenter" src="../static/images/nautical-analogy.png" alt="Cumberland Basin, April 1844"></figure>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-
-        <section class="bg-apple aligncenter">
+        <!-- <section class="bg-apple aligncenter">
             <div class="wrap zoomIn">
               <h1>
                 How I got to be fascinated about (cloud) robotics
@@ -128,26 +120,166 @@
                   </iframe>
                  </div>
             </div>
-        </section>
+        </section> -->
 
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/udacity-car.jpeg')"></span>
+        <section class="bg-apple slide-top">
+            <span class="background-center" style="background-image:url('../static/images/car/udacity-car.jpeg')"></span>
             <div class="wrap">
-              <div class="content-left">
+              <div class="content-center">
                   <h1>
                       DISCLAIMER
                   </h1>
                       <h2>  
-                      No human or animal was injured or died from our experiments during this project 
+                      Luckily, no human or animal was injured or died as a result of our code deployment into Carla the car. 
                     </h2>
               </div>
             </div>
         </section>
 
+        <section class="slide-bottom">
+            <div class="wrap">
+              <h3>Technical Areas</h3>
+              <ul class="flexblock steps">  
+                <li>
+                  <span>
+                    <svg class="fa-eye">
+                      <use xlink:href="#fa-eye"></use>
+                    </svg>
+                  </span>
+                  <h2>01. Computer Vision</h2>
+                  <p>How to use the cameras of the car to find traffic lane lines, traffic lights, semantically segment the environment etc. </p>
+                </li>
+
+                <li>
+                  <div class="process step-2"></div>
+                  <span>
+                    <svg class="fa-magic">
+                      <use xlink:href="#fa-magic"></use>
+                    </svg>
+                  </span>
+                  <h2>02. Sensor Fusion</h2>
+                  <p>How the vehicle's LIDAR and RADAR sensors readings are combined.</p>
+                </li>
+                
+                <li>
+                  <div class="process step-3"></div>
+                  <span>
+                    <svg class="fa-balance-scale">
+                      <use xlink:href="#fa-balance-scale"></use>
+                    </svg>
+                  </span>
+                  <h2>03. Localization</h2>
+                  <p>How to localize and track the vehicle</p>
+                </li>
+                
+                <li>
+                  <div class="process step-4"></div>
+                  <span>
+                    <svg class="fa-cog">
+                      <use xlink:href="#fa-cog"></use>
+                    </svg>
+                  </span>
+                  <h2>04. Planning</h2>
+                  <p>How to plan the path of the vehicle</p>
+                </li>
+                
+                <li>
+                    <span>
+                      <svg class="fa-eye">
+                        <use xlink:href="#fa-eye"></use>
+                      </svg>
+                    </span>
+                    <h2>00. Architecture</h2>
+                    <p>What is the high level architecture of an autonomous vehicle?</p>
+                </li>
+              </ul>
+            </div>
+            
+          </section>
+
         <section class="bg-apple aligncenter">
             <div class="wrap zoomIn">
               <h1>
-                In reverse chronological order - the final Capstone project
+                Architecture
+              </h1>
+            </div>
+        </section>
+
+        <section class="bg-apple slide-top">
+            <div class="wrap">
+            <h2>
+              Self-driving car subsystems
+            </h2>
+            <figure><img class="img.aligncenter size-70" src="../static/images/car/system.png" alt="system">
+            <!-- <span class="background-center" style="background-image:url('../static/images/car/system.png')"></span> -->
+            <figcaption> (The camera should have been connected also to the free-space detector.) </figcaption>
+          </figure>
+        </div>
+        </section>
+
+        <section class="bg-apple slide-top">
+            <div class="wrap zoomIn">
+            <h1>
+              Carla is based on the Robotic Operating System (ROS)
+            </h1>
+            <figure><img class="img.aligncenter size-70" src="../static/images/car/final-project-ros-graph-v2.png" width="1300" alt="ros-graph">
+              <!-- <img src="https://www.computerhope.com/cdn/computer-hope.jpg" width="200" height="40" alt="Computer Hope"> -->
+          </figure>
+        </div>
+        </section>
+      
+        <!-- <section class="bg-apple fullscreen">
+            <div class="card-50">
+              <figure>
+                <img src="../static/images/car/car-simulation.png" alt="Light Traffic Detection">
+                <figcaption>
+                  <a href="https://github.com/udacity/CarND-Capstone/releases" title="System Integration Simulator v 1.3">
+                    System Integration Simulator v 1.3
+                  </a>
+                </figcaption>
+              </figure>
+            
+              <div class="flex-content">
+                <h2>
+                  ROS Connected Simulator for System Integration
+                </h2>
+                <h4>
+                  The car is not enough - you need also a real world simulator with a good physics engine and develop the ability to communicate with ROS. 
+                </h4>
+              </div>
+             
+            </div>
+            
+          </section> -->
+
+          <section class="bg-apple fullscreen">
+              <div class="card-50">
+                  <video autoplay muted loop>
+                  <source src="file:///Users/pantelis/projects/web/sites/slides/static/videos/capstone-sim-traffic-light-detection.mp4" type="video/mp4" alt="Light Lane Detection">
+                    <figcaption>
+                        <a href="https://github.com/udacity/CarND-Capstone/releases" title="System Integration Simulator v 1.3">
+                          System Integration Simulator v 1.3
+                        </a>
+                      </figcaption>
+                  </video>
+                <!-- end figure-->
+                <div class="flex-content">
+                    <h2>
+                      ROS Connected Simulator for System Integration
+                    </h2>
+                    <h4>
+                      The car is not enough - you need also a real world simulator with a good physics engine and develop the ability to communicate with ROS. 
+                    </h4>
+                  </div>
+                <!-- end .flex-content-->
+              </div>
+              <!-- end .card-50-->
+            </section>
+
+        <section class="bg-apple aligncenter">
+            <div class="wrap zoomIn">
+              <h1>
+                The final test - somewhere in California (March 2018)
               </h1>
               <div class="embed">
                   <iframe src="https://www.youtube.com/embed/dE3-dPqFnI8">
@@ -159,30 +291,142 @@
         <section class="bg-apple aligncenter">
             <div class="wrap zoomIn">
               <h1>
-                Architecture
+                Perception Subsystem - Vision
               </h1>
             </div>
         </section>
 
-        <section class="bg-apple aligncenter">
-            <div class="wrap zoomIn">
-              <h1>
-                Computer Vision
-              </h1>
+      <section class="bg-apple slide-top">
+            <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
+            <span class="background" style="background-image:url('../static/images/car/city.png')"></span>
+            <div class="wrap">
+              <div class="content-left">
+                <h1>Sample outputs of the vision perception systems</h1>
+              </div>
             </div>
-        </section>
+          </section>
+  
+          <section class="bg-apple aligncenter">
+              <div class="wrap zoomIn">
+                <h1>
+                  Lane line detection
+                </h1>
+                <div class="embed">
+                    <iframe src="https://www.youtube.com/embed/s5t3WVToHsk">
+                    </iframe>
+                   </div>
+              </div>
+            </section>
 
-        <section class="bg-apple aligncenter">
-            <div class="wrap zoomIn">
-              <h1>
-                Behavioral cloning
-              </h1>
-              <div class="embed">
-                  <iframe src="https://www.youtube.com/embed/LikxFZZO2sk">
-                  </iframe>
-                 </div>
-            </div>
-        </section>
+          <section class="bg-apple alignleft">
+              <!--.wrap = container (width: 90%) -->
+              <div class="wrap">
+                <h2>Traffic sign classification - images in the dataset (32,32,3) </h2>
+                <figure><img class="aligncenter" src="../static/images/car/traffic-signs-visual-histogram.png" alt=""></figure>
+              </div>
+              <!-- .end .wrap -->
+          </section>
+
+
+          <section class="bg-apple fullscreen">
+              <div class="card-50">
+                  <figure>
+                      <img src="../static/images/car/dnn-arch-traffic-signs.png" width="500" alt="Light Traffic Detection">
+                      <figcaption>
+                        <a href="https://github.com/pantelis/traffic-sign-classifier" title="Github repo">
+                          https://github.com/pantelis/traffic-sign-classifier
+                        </a>
+                      </figcaption>
+                    </figure>
+                <div class="flex-content">
+                    <h2>
+                      Traffic sign classification
+                    </h2>
+                    <h4>
+                      <ul> 
+                        <li>For German traffic signs classification, the Keras API was used to define a deep neural network and train its hyperparameters.</li>
+                        <li>Validation set accuracy with the CNN bellow was 94.830%</li>	
+                    </ul> 
+                    </h4>
+                  </div>
+                <!-- end .flex-content-->
+              </div>
+              <!-- end .card-50-->
+            </section>
+
+            <section class="bg-apple alignleft">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                  <h2>Scene Understanding</h2>
+                  <figure><img class="aligncenter" src="../static/images/car/scene-understanding.png" alt=""></figure>
+                </div>
+                <!-- .end .wrap -->
+            </section>
+
+           
+
+            <section class="bg-apple fullscreen">
+                <div class="card-50">
+                    <div class="flex-content">
+                        <iframe src="../static/images/car/semantic-segmentation.gif"> </iframe>
+                    </div>
+                  <div class="flex-content">
+                      <h2>
+                        Semantic Segmentation
+                      </h2>
+                      <h4>
+                        <ul>
+                          <li> Click <a href="https://github.com/pantelis/CarND-Semantic-Segmentation-Project">https://github.com/pantelis/CarND-Semantic-Segmentation-Project</a> </li> 
+                        <li>The Kitti Road dataset from here was used for training and testing.</li>
+                        <li>We label the pixels of a road in images using a Fully Convolutional Network (FCN) based on VGG16 </li>
+                      </ul> 
+                      </h4>
+                    </div>
+                  <!-- end .flex-content-->
+                </div>
+                <!-- end .card-50-->
+              </section>
+    
+            <section class="bg-apple aligncenter">
+                <div class="wrap zoomIn">
+                  <h1>
+                    Localization & Sensor Fusion
+                  </h1>
+                </div>
+            </section>
+
+            <section class="bg-apple alignleft">
+                <div class="wrap">
+                  <h2>LIDAR</h2>
+                  <figure><img class="img.aligncenter size-70" src="../static/images/car/lidar.png" alt=""></figure>
+                </div>
+                <ul>
+                  <li>Velodyne VLP-16 - indoor scanning .</li>
+                </ul>
+
+            </section>
+
+            <section class="bg-apple alignleft">
+                <div class="wrap">
+                  <h2>Localization Problem Statement</h2>
+                  <figure><img class="img.aligncenter size-70" src="../static/images/car/localization.png" alt=""></figure>
+                </div>
+                <ul>
+                  <li>Localization accuracy must be 3cm-10cm.</li>
+                  <li>To localize the car, you need to match the (distance) measurements using the onboard sensors (lidar/radar) to those of the map. </li>
+                  <li>This is one of the reasons why good map info is important. </li>
+                </ul>
+
+            </section>
+
+            <section class="bg-apple alignleft">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                  <h2>LIDAR-RADAR Fusion</h2>
+                  <figure><img class="aligncenter" src="../static/images/car/lidar-radar-fusion.png" alt=""></figure>
+                </div>
+                <!-- .end .wrap -->
+            </section>
 
         <section class="bg-apple aligncenter">
             <div class="wrap zoomIn">
@@ -192,10 +436,31 @@
             </div>
         </section>
 
+        <section class="bg-apple alignleft">
+            <div class="wrap">
+              <h2>Planning Subsystem Overview</h2>
+              <figure><img class="img.aligncenter size-50" src="../static/images/car/path-planning-overview.png" alt=""></figure>
+            </div>
+        </section>
+
+        <section class="bg-apple alignleft">
+            <div class="wrap">
+              <h2>Behavioral Planning</h2>
+              <figure><img class="img.aligncenter size-70" src="../static/images/car/behavioral-planning.png" alt=""></figure>
+            </div>
+        </section>
+
+        <section class="bg-apple alignleft">
+            <div class="wrap">
+              <h2>Trajectory Generation</h2>
+              <figure><img class="img.aligncenter size-70" src="../static/images/car/trajectory-generation.png" alt=""></figure>
+            </div>
+        </section>
+
         <section class="bg-apple aligncenter">
             <div class="wrap zoomIn">
               <h1>
-                Highway planning algorithms 
+                Highway planning - rule based algorithms 
               </h1>
               <div class="embed">
                   <iframe src="https://www.youtube.com/embed/qnKSfY_RDOU">
@@ -207,283 +472,14 @@
         <section class="bg-apple aligncenter">
             <div class="wrap zoomIn">
               <h1>
-                Localization
+                Behavioral cloning
               </h1>
+              <div class="embed">
+                  <iframe src="https://www.youtube.com/embed/1dBLLB2qasM">
+                  </iframe>
+                 </div>
             </div>
         </section>
-
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/unreal-architecture.jpg')"></span>
-            <div class="wrap">
-              <div class="content-top">
-                <h2> Capturing the AI opportunity - heartflow.com case study</h2>
-                <h4>The team and the idea behind it</h4>
-                <h4>The Business Model </h4>
-                <h4>The Architecture </h4>
-                <h4>The Implementation (Pipelines) </h4>
-                <h4>The Market Validation & Exit </h4>
-              </div>
-            </div>
-        </section>
-
-        <section class="bg-apple slide-bottom">
-            <!-- Overlay/Opacity: [class*="bg-"] > .background.dark or .light -->
-            <span class="background" style="background-image:url('https://source.unsplash.com/Y5Tjb62cxl8/')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <p>
-                  <svg class="large fa-tree">
-                    <use xlink:href="#fa-tree"></use>
-                  </svg>
-                </p>
-                <h1>640,000 people die every year</h1>
-                <h4>Yearly cost of heart disease treatment:  $300 Billion  </h4>
-              </div>
-            </div>
-            <!-- .end .wrap -->
-          </section>
-
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/heartflow.png')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>The Idea</h2>
-                <h4>Generative augmented physical (CFD) modeling from CT Scans</h4>
-                Up to now the determination of blockage involved threading a catheter from the groin up to the heart and measuring blood flow to 
-                determined whether a stent is needed to open up the coronary artery. 
-              </div>
-            </div>
-        </section>
-
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/3d-model.png')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>The Team</h2>
-                <h4>Medical Doctors</h4>
-                <h4>Mechanical Engineers</h4>
-                <h4>Computer Scientists</h4>
-                <h4>NOTE: No FDA Approval Required (e.g. 510K clearance)</h4>
-              </div>
-            </div>
-        </section>
-
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/3d-model.png')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>The Business Model</h2>
-                <h4>Medicate reimburses Heartflow $1,450 per test.</h4>
-                <h4>For every reimbursement Heartflow saves $4,000 in costs</h4>
-                <h4>The test is non-invasive and therefore almost ambigutous.</h4>
-                <h4>The company has partnered with SIEMENS' Marketplace and other vendors/providers.</h4>
-              </div>
-            </div>
-        </section>
-
-        <section class="bg-apple">
-          <div class="wrap">
-            <h2>What we need from AI Architecture</h2>
-            <ul class="flexblock features">   
-              <li>
-                <div>
-                  <h1>
-                      <i class="fas fa-draw-polygon fa-7x"></i>
-                    Composability
-                  </h1>
-                  pointing to microservices and atomic operations.
-                </div>
-              </li>
-              <li>
-                  <div>
-                    <h1>
-                      <i class="fas fa-cloud fa-4x"></i>
-                      Scalability & Resilience
-                    </h1>
-                    pointing to cloud-native (Kubernetes and FaaS) architectures. 
-                  </div>
-                </li>
-              <li>
-                <div>
-                  <h1>
-                      <i class="fas fa-server fa-7x"></i>
-                    Portability
-                  </h1>
-                  across workstation, training rigs, dedicated edge devices and public clouds.  
-                </div>
-              </li>
-          </div>
-        </section>
-
-          <section class="bg-apple">
-              <div class="wrap">
-                  <h2>AI Architecture Building Blocks - Deep Learning Foundation</h2>
-          <iframe width="2120" height="630" src="https://landscape.lfdl.io/format=landscape&fullscreen=yes" frameborder="0" allowfullscreen></iframe>
-          </div>
-        </section>
-
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/ai-stack.svg')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>AI Stack</h2>
-                <h4>The significance of the edge</h4>
-              </div>
-            </div>
-        </section>
-
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/acumos-E2E.svg')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>The 4 pipelines (Plumbing)</h2>
-              </div>
-            </div>
-        </section>
-  
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/acumos-DP1.svg')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>Data Pipeline</h2>
-              </div>
-            </div>
-        </section>
-  
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/acumos-MTP.svg')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>Model Training Pipeline</h2>
-              </div>
-            </div>
-        </section>
-  
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/acumos-MEVP.svg')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>Model Evaluation & Validation Pipeline</h2>
-              </div>
-            </div>
-        </section>
-  
-        <section class="bg-apple slide-bottom">
-            <span class="background-center" style="background-image:url('../static/images/acumos-SP.svg')"></span>
-            <div class="wrap">
-              <div class="content-left">
-                <h2>Serving Pipeline</h2>
-              </div>
-            </div>
-        </section>
-
-      <section class="bg-apple">
-        <div class="wrap">
-            <h2>www.acumos.org - the need for AI marketplaces</h2>
-    <iframe width="2000" height="600" src="https://docs.acumos.org/en/latest/architecture/platform_architecture.html#architecture-overview" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </section>
-
-  <section class="bg-apple slide-bottom">
-      <span class="background-center" style="background-image:url('../static/images/flats.jpeg')"></span>
-      <div class="wrap">
-        <div class="content-bottom">
-          <h2>Market Reaction</h2>
-          <h4>
-          <ul>
-            <li>The single most important success factor of heartflow.com: <strong>explainable predictions</strong></li>
-            <li>2019 market valuation - $1.5 billion </li>
-            <li>NHS adopted the approach in all its hospitals</li> 
-          </ul>
-        </h4>
-        </div>
-      </div>
-  </section>
-
-
-    <section class="bg-apple aligncenter">
-            <div class="wrap zoomIn">
-              <h1>
-                What other opportunities are there ? 
-              </h1>
-            </div>
-        </section>
-
-        <section class="bg-apple" >
-            <div class="wrap">
-              <h2>Video AI opportunities in survailance</h2>
-              <hr>
-              <div class="grid">
-                <div class="column">
-                  <h3>Deep Learning in 2017</h3>
-                  <div class="embed">
-                    <iframe src="https://www.youtube.com/embed/CzvCiNpmVmk">
-                    </iframe>
-                   </div>
-                  <p>After spending 3200W, 2-socket CPU, 8 x GTX1080Ti, 16 x 720p cameras, algorithms are unable to pass the mirror test.</p>
-                </div>
-                <div class="column">
-                  <h3>2 year old</h3>
-                  <div class="embed">
-                    <iframe src="https://www.youtube.com/embed/Xe2pQUsCUcw">
-                    </iframe>
-                   </div>
-                   <p> She figures it out in less than 1 min.</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="bg-apple slide-bottom">
-              <span class="background-center" style="background-image:url('../static/images/soccer.png')"></span>
-              <div class="wrap">
-                <div class="content-top">
-                  <h2> Video AI opportunities in sports </h2>
-                  <h4> Lots of opportunities on improving team performance or AI-based personal trainers.</h4>
-                  <h4>$200 for 1 camera</h4>
-                  <h4>$3,000 to store in AWS S3 its video feed for 1 year</h4>
-                </div>
-              </div>
-          </section>
-
-          <section class="bg-apple slide-bottom">
-              <span class="background-center" style="background-image:url('../static/images/NVIDIA-Jetson-Xavier-Large.jpg')"></span>
-              <div class="wrap">
-                <div class="content-top"> 
-                  <h2>Video AI opportunities at the edge</h2>
-                  <ul>
-                  <li> 
-                    <h4>All cloud providers are working in capturing hybrid cloud native applications hosted on Kubernetes </h4> </li>
-                  <li>
-                    <h4>Federation, tailored to the edge hardware, security & other optimizations for edge clouds and embedded systems </h4>
-                  </li>
-                </ul>
-                </div>
-              </div>
-          </section>
-
-          <section class="bg-apple slide-bottom">
-              <span class="background-center" style="background-image:url('../static/images/congestion.jpg')"></span>
-              <div class="wrap">
-                <div class="content-left">
-                  <h2>Transportation</h2>
-                  <h4>Autonomous connected electric & shared (ACES) vehicles
-                  <ul>
-                      <li>How will EVs recharge overnight in a city full of blocks of flats? </li>
-                      <li>Simoudis' book covers the business models and technology drivers </li>
-                  </ul>
-                </h4>
-                  <h4>Congestion pricing in city centers
-                      <ul>
-                          <li>Yield Management Algorithms (Dynamic Pricing)</li>
-                          <li> License plate recognition</li>
-                          <li> Car type recognition</li>
-                          <li> Traffic Congestion recognition</li>
-                      </ul>
-                    </h4>
-                </div>
-              </div>
-          </section>
 
         <section class="bg-apple slide-bottom">
             <span class="background-center" style="background-image:url('../static/images/miloi-chios.jpg')"></span>
@@ -495,10 +491,14 @@
                     </h1>
                     <h4>
                     <ul>
-                      <li> There is no such thing as "AI startup" - you need to have a solid business model that is by itself sustained without AI </li>
-                      <li> Rethink mission critical industries - partner with local providers to make their business models work better</li>
-                      <li> Health, Transportation, Energy, Security are being disrupted not so by AI but by the  drammatic cost reduction of the software & 
-                        hardware platforms that allow entries from many, unseen before, players</li>
+                      <li> We didn't see anywhere in the technology parts of the program something that was considered cutting edge. 
+                      <li> I am not sure if  this was a purposeful made choice - to reduce either the risk of the the product  or the technical debt. </li>
+                      <li> The self driving car space has cooled down a bit after the initial euphoria - its now apparent that those that will win the race are those 
+                        that have real cars equipped with cameras and other sensors that can effectively use the data to their advantage. Its difficult to beat Tesla (1B miles) 
+                        or big German players in this respect. </li>
+                        <li> Acquisitions are continuing though especially around companies that can reduce sensor costs (e.g. solid state LIDARs). </li>
+                        <li> The next step in the evolution of self-driving is co-driving (collaborative driving between vendors) that presumes a very low cost and very low latency 
+                          communication technology (probably 5G) that is 2-5 years out. </li>
                       </ul>
                     </h4>
                   </div>
